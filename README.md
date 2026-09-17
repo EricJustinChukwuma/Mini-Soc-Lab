@@ -44,3 +44,24 @@ Investigations will be documented as the lab is developed.
 - Incident response
 - MITRE ATT&CK
 - Technical documentation
+
+## Phase 2 - Wazuh SIEM Deployment
+
+Deployed a Wazuh all-in-one SIEM server on Ubuntu Server.
+
+### Configuration
+
+- Hostname: soc-wazuh-01
+- 4 vCPU
+- 8 GB RAM
+- 60 GB virtual disk
+- VMware NAT networking
+
+### Wazuh Components
+
+- Wazuh Manager
+- Wazuh Indexer
+- Wazuh Dashboard
+
+All three Wazuh services were verified as active and running.
+The Wazuh dashboard was successfully accessed from the host workstation.

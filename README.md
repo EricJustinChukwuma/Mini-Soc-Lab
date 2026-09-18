@@ -65,3 +65,27 @@ Deployed a Wazuh all-in-one SIEM server on Ubuntu Server.
 
 All three Wazuh services were verified as active and running.
 The Wazuh dashboard was successfully accessed from the host workstation.
+
+# Phase 3 - Windows Endpoint Deployment
+
+## Endpoint
+
+Created a Windows 11 virtual machine in VMware Workstation Pro.
+
+### Configuration
+
+- Hostname: SOC-WIN11-01
+- Operating System: Windows 11
+- Network: VMware NAT
+- Wazuh Manager: SOC-WAZUH-01
+
+## Network Validation
+
+Confirmed that the Windows endpoint could communicate with the
+Wazuh manager.
+
+Wazuh agent communication and enrollment ports were tested using:
+
+```powershell
+Test-NetConnection 192.168.133.210 -Port 1514
+Test-NetConnection 192.168.133.210 -Port 1515

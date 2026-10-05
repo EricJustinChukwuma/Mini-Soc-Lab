@@ -129,3 +129,13 @@ Configured the Wazuh Windows agent to collect the Sysmon event channel:
   <location>Microsoft-Windows-Sysmon/Operational</location>
   <log_format>eventchannel</log_format>
 </localfile>
+```
+
+Checked Windows was auditing successful and failed login accordingly.
+
+# Phase 5 - Investigation 01:Failed Windows Authentication
+
+## Objective
+
+- Investigation  began at 17:07:49 5th October 2026
+- 
